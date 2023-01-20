@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+h1.main {
+  font-weight: 200;
+  margin-top: 50px;
+}
+h1.strong {
+  font-weight: 600;
+  margin-top: -20px;
+  color: hsl(234, 12%, 34%);
+}
+
+body {
+  font-family: "poppins", sans-serif;
+  background-color: hsl(0, 0%, 98%);
+}
+
+header {
+  margin: 50px auto;
+  text-align: center;
+  max-width: 500px;
+}
+p {
+  color: hsl(229, 6%, 66%);
+  font-size: 14px;
+}
+
+h3 {
+  color: hsl(234, 12%, 34%);
+}
+.container {
+  display: flex;
+  max-width: 1120px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.box {
+  position: relative;
+  overflow: hidden;
+  max-width: 350px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  padding: 30px;
+  border-radius: 5px;
+  margin: 10px auto;
+}
+
+.box-push {
+  transform: translateY(50%);
+}
+
+.box-img {
+  margin-top: 40px;
+  display: block;
+  margin-left: auto;
+}
+.box-red::after {
+  content: "";
+  background-color: hsl(0, 78%, 62%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 5px;
+  width: 100%;
+}
+
+.box-cyan::after {
+  content: "";
+  background-color: hsl(180, 62%, 55%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 5px;
+  width: 100%;
+}
+
+.box-orange::after {
+  content: "";
+  background-color: hsl(34, 97%, 64%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 5px;
+  width: 100%;
+}
+
+.box-blue::after {
+  content: "";
+  background-color: hsl(212, 86%, 64%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 5px;
+  width: 100%;
+}
+
+@media (max-width: 740px) {
+  .box-push {
+    transform: translateY(0);
+  }
+}
