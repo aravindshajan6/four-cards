@@ -1,6 +1,6 @@
 Four-cards feature section
 
-#preview (./design/desktop-preview.jpg)
+![preview](./design/desktop-preview.jpg)
 
 hosted page links
 
